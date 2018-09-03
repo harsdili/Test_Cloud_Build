@@ -1,7 +1,7 @@
 steps:
 - name: 'ubuntu'
   args: ['bash', './myscript.sh']
-- name: 'list dir'
+- name: 'ubuntu'
   args: ['bash', 'ls -lh']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/$PROJECT_ID/custom-script-test', '.']
